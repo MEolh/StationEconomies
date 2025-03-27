@@ -22,7 +22,7 @@ If no station economy information is available in the game journal's 'Docked' ev
 
 ## Compatibility
 
-This plugin is **only compatible with EDMarketConnector version 4.0.0 and later**, which uses **Python 3.9+** [1]. Older versions of EDMC based on Python 2.7 are not supported [2, 3].
+This plugin is **only compatible with EDMarketConnector version 4.0.0 and later**, which uses **Python 3.9+**. Older versions of EDMC based on Python 2.7 are not supported.
 
 ## Localization
 
