@@ -34,11 +34,11 @@ This plugin includes translations for the following languages:
 *   **Spanish** (`es`)
 *   **French** (`fr`)
 
-These translations will be automatically used by EDMarketConnector if your EDMC language setting matches. If you would like to contribute translations for other languages, please feel free to submit a pull request. You can find information on how to create translation files in the [EDMC plugin documentation](https://github.com/EDCD/EDMarketConnector/blob/main/PLUGINS.md#localisation) [4].
+These translations will be automatically used by EDMarketConnector if your EDMC language setting matches. If you would like to contribute translations for other languages, please feel free to submit a pull request. You can find information on how to create translation files in the [EDMC plugin documentation](https://github.com/EDCD/EDMarketConnector/blob/main/PLUGINS.md#localisation).
 
 ## Acknowledgement
 
-*   [EDMarketConnector (EDMC)](https://github.com/EDCD/EDMarketConnector) for providing the core application and comprehensive plugin development documentation [3, 5-7].
+*   [EDMarketConnector (EDMC)](https://github.com/EDCD/EDMarketConnector) for providing the core application and comprehensive plugin development documentation.
 
 ## Contact
 
