@@ -1,7 +1,6 @@
 import tkinter as tk
-import myNotebook as nb
-from typing import Optional, Tuple
-from config import config, appname
+from typing import Optional
+from config import appname
 import l10n
 import functools
 import os
@@ -12,7 +11,7 @@ economy_label: Optional[tk.Label] = None
 other_economies_label: Optional[tk.Label] = None
 logger = None
 plugin_name = None
-main_frame: Optional[nb.Frame] = None # Riferimento al frame principale
+main_frame: Optional[tk.Frame] = None # Riferimento al frame principale
 label_titolo: Optional[tk.Label] = None # Nuovo riferimento per "Main economy:"
 other_economies_title: Optional[tk.Label] = None # Nuovo riferimento per "Other economies:"
 
@@ -32,17 +31,17 @@ def plugin_start3(plugin_dir: str) -> str:
     logger.info(f"Plugin StationEconomies loaded. The plugin folder is: {plugin_dir}")
     return "StationEconomies"
 
-def plugin_app(parent: tk.Frame) -> nb.Frame:
+def plugin_app(parent: tk.Frame) -> tk.Frame:
     global economy_label, other_economies_label, main_frame, label_titolo, other_economies_title
-    main_frame = nb.Frame(parent)
+    main_frame = tk.Frame(parent)
     main_frame.columnconfigure(0, weight=1)
-    frame_principale = nb.Frame(main_frame)
+    frame_principale = tk.Frame(main_frame)
     label_titolo = tk.Label(frame_principale, text=plugin_tl("Main economy:")) # Assegna il label alla variabile globale
     label_titolo.grid(row=0, column=0, sticky=tk.W, pady=(0, 2))
     economy_label = tk.Label(frame_principale, text=plugin_tl("Data not available"))
     economy_label.grid(row=1, column=0, sticky=tk.W, pady=(2, 0))
     frame_principale.grid(row=0, column=0, sticky=tk.NSEW, padx=5, pady=5)
-    frame_altre = nb.Frame(main_frame)
+    frame_altre = tk.Frame(main_frame)
     other_economies_title = tk.Label(frame_altre, text=plugin_tl("Other economies:")) # Assegna il label alla variabile globale
     other_economies_title.grid(row=0, column=0, sticky=tk.W, pady=(0, 2))
     other_economies_label = tk.Label(frame_altre, text=plugin_tl("Data not available"))
